@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'account'
+    'account',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -66,6 +67,10 @@ TEMPLATES = [
         },
     },
 ]
+
+# Getting Django User Model
+AUTH_USER_MODEL = 'account.UserAccount'
+
 
 WSGI_APPLICATION = 'cofounder.wsgi.application'
 
